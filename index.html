@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TORNADO </title>
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Tahoma;
+background:#fffaf3;
+text-align:center;
+color:#333;
+}
+
+/* الهيدر */
+header{
+background:url("WhatsApp Image 2026-02-07 at 2.46.21 PM.jpeg") center center/cover no-repeat;
+height:260px;
+}
+
+/* أزرار المجموعات */
+nav{
+margin:20px 0;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+nav button{
+background:white;
+color:#1f7a3a;
+border:2px solid #1f7a3a;
+padding:12px 24px;
+font-weight:bold;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+font-size:15px;
+}
+
+nav button:hover{
+background:#c62828;
+color:white;
+border-color:#c62828;
+transform:scale(1.05);
+}
+
+/* الصفحة الرئيسية */
+#welcome{
+min-height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding-top:20px;
+}
+
+/* ⭐ تعديل صورة المنتصف */
+#welcome img{
+width:45%;
+max-width:260px;
+border-radius:20px;
+box-shadow:0 6px 18px rgba(0,0,0,0.2);
+margin-bottom:15px;
+transition:0.3s;
+}
+
+#welcome img:hover{
+transform:scale(1.05);
+}
+
+#welcome p{
+font-size:24px;
+color:#c62828;
+font-weight:bold;
+}
+
+/* المينيو */
+.menu{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+padding:30px;
+}
+
+.hidden{
+display:none;
+}
+
+.dish{
+background:white;
+border-radius:18px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+overflow:hidden;
+border-bottom:5px solid #1f7a3a;
+transition:0.3s;
+}
+
+.dish:hover{
+transform:translateY(-5px);
+border-bottom:5px solid #c62828;
+}
+
+.dish img,
+.dish video{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.dish p{
+padding:12px;
+font-weight:bold;
+color:#1f7a3a;
+font-size:16px;
+}
+
+footer{
+background:linear-gradient(90deg,#1f7a3a,#c62828);
+color:white;
+padding:18px;
+margin-top:30px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header></header>
+
+<nav>
+<button onclick="showSection('APPETIZERS')">APPETIZERS</button>
+<button onclick="showSection('PASTA')">PASTA</button>
+<button onclick="showSection('CORN')">TORNADO CORNN</button>
+<button onclick="showSection('BURGERS')">BURGERS & SANDWICH</button>
+<button onclick="showSection('SALAD')">SALAD</button>
+<button onclick="showSection('KA3KE')">TORNADO KA3KE</button>
+<button onclick="showSection('CREPE')">CREPE&WAFER</button>
+<button onclick="showSection('offers')">OFER TORNADO</button>
+</nav>
+
+<section id="welcome">
+<img src="WhatsApp Image 2026-02-07 at 3.22.56 PM.jpegWhatsApp Image 2026-02-07 at 3.22.56 PM.jpeg">
+<p>معكم بدايه بلا نهايه</p>
+</section>
+
+<section id="APPETIZERS" class="menu hidden">
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.48 PM.jpeg"><p>cheese garlic bred – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.47 PM.jpeg"><p> wedges – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.48 PM (1).jpeg"><p>curly fries  </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.48 PM (2).jpeg"><p>mozrela sticks – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.48 PM (4).jpeg"><p>fries – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.48 PM (3).jpeg"><p>b.b.q wings   – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.49 PM.jpeg"><p>buffalo wings – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>calamar rings – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.49 PM (1).jpeg"><p>onion rings – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.49 PM.jpeg"><p>shrimp sticks – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-02-07 at 4.47.49 PM (2).jpeg"><p>provenclal sea food  – </p></div>
+</section>
+
+
+<section id="PASTA" class="menu hidden">
+
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.59 PM.jpeg"><p>PENNE ARABIATA – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.57 PM.jpeg"><p> 4 CHEESE – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.53 PM (2).jpeg"><p>PESTO  </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.50.59 PM.jpeg"><p>MEXICAN PASTA – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>FAHITA PASTA – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.53 PM (1).jpeg"><p>SPAGETTI BOLONASE  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>PASTA SHRIMP– </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>PENNE VEGETERIEN – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>PENNE DELANONA – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>LASAGNE – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>PENNE DELANONA FEKHARA  – </p></div> 
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>SPAGETTI TPRNADO – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>FETTUCCINE CHICKEN – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>FETTUCCINE ALFREDO – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>TORTELLINI – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>TORTELLINI FRKHARA – </p></div>
+
+</section>
+<section id="CORN" class="menu hidden">
+
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.59 PM.jpeg"><p>CHEESE CORN – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.57 PM.jpeg"><p> B.B.Q CORN – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.53 PM (2).jpeg"><p>MEXICAN CORN  </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.50.59 PM.jpeg"><p>SPEICAL CORN  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>SMOCKED FLAVOR CORN  – </p></div>
+
+</section>
+<section id="BURGERS" class="menu hidden">
+
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.59 PM.jpeg"><p>FAHITA – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.57 PM.jpeg"><p> FRANSISCO – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.53 PM (2).jpeg"><p>CHIKEN SUB  </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.50.59 PM.jpeg"><p>TUNA SANDWICH – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>MEXICAN SANDWICH – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.53 PM (1).jpeg"><p>ZINGER BURGER  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>CLASSIC BURGER– </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>TORNADO BURGER – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>CHIKEN ROCCA SANDWICH – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>CHILEN BURGER – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>CRESPI SUB  – </p></div> 
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>STEAK SUB – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>PICASSO – </p></div>
+
+
+</section>
+<section id="SALAD" class="menu hidden">
+
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.59 PM.jpeg"><p>ROCCA SALAD – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.57 PM.jpeg"><p> HALLOUM SALAD – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.53 PM (2).jpeg"><p>CREEK SALAD  </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.50.59 PM.jpeg"><p>TUNA SALAD  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>TORNADO SALAD  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>CHICKEN CESEAR SALAD  – </p></div>
+
+</section>
+<section id="KA3KE" class="menu hidden">
+
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.59 PM.jpeg"><p>KA3KE PICON – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.57 PM.jpeg"><p> CHEDDAR – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.53 PM (2).jpeg"><p>CHEDDAR & SITOS  </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.50.59 PM.jpeg"><p>CHEDDAR & MORAADEL  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>KA3KE KHEDRA  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>KA3KE 4 CHEESE  – </p></div>
+
+</section>
+<section id="CREPE" class="menu hidden">
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.59 PM.jpeg"><p>NUTELLA – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.57 PM.jpeg"><p> STRAWBERRY CHOCOLATE – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.53 PM (2).jpeg"><p>DARK CHOCOLATE  </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.50.59 PM.jpeg"><p>HALAWA CHOCOLATE – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>KINDER CHOCOLATE – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.03.53 PM (1).jpeg"><p>LOTUS CREAM   – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>KINDER FINGERS – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>KINDER BUENO – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>MILKA-FLAVORS – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>GALAXY-TWIX-BOUNTY – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>DUBAI CHOCOLATE  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>MARS -SNICKERS  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>BROWNIES -BANANA  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>STRAWBERRY - MANGO  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>PEACH - KIWI  – </p></div>
+<div class="dish"><img src="WhatsApp Image 2026-01-17 at 2.52.15 PM.jpeg"><p>BLUE BERRIES  – </p></div>
+
+</section>
+
+
+
+<section id="offers" class="menu hidden">
+<div class="dish">
+<video controls>
+<source src="offer1.mp4" type="video/mp4">
+</video>
+<p>عرض خاص</p>
+</div>
+
+<div class="dish">
+<video controls>
+<source src="offer2.mp4" type="video/mp4">
+</video>
+<p>عرض عائلي</p>
+</div>
+</section>
+
+<footer>
+©️ TORNADO
+</footer>
+
+<script>
+
+function showSection(id){
+
+document.getElementById("welcome").style.display="none";
+
+document.querySelectorAll(".menu").forEach(section=>{
+section.classList.add("hidden");
+});
+
+document.getElementById(id).classList.remove("hidden");
+
+}
+
+</script>
+
+</body>
+</html>
